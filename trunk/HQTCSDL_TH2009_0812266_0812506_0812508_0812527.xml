@@ -1,0 +1,27 @@
+﻿<group>
+	<student>
+		<studentid>0812266</studentid>
+		<name>Trương Hoàng Liêm</name>
+		<email>hoangliem236@gmail.com</email>	
+		<role>Thành viên</role> 
+	</student>
+	<student>
+		<studentid>0812506</studentid>
+		<name>Nguyễn Minh Thuận</name>
+		<email>thuan178@gmail.com</email>	
+		<role>Thành viên</role> 
+	</student>
+	<student>
+		<studentid>0812508</studentid>
+		<name>Trần Hưng Thuận</name>
+		<email>0812508@gmail.com</email>	
+		<role>Trưởng nhóm</role> 
+
+	</student>
+	<student>
+		<studentid>0812527</studentid>
+		<name>Huỳnh Công Toàn</name>
+		<email>7hanatos13@gmail.com</email>	
+		<role>Thành viên</role> 
+	</student>
+</group>
