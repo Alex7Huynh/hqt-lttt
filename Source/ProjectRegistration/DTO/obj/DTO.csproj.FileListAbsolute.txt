@@ -1,0 +1,15 @@
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\bin\Debug\DTO.dll
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\bin\Debug\DTO.pdb
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\obj\Debug\ResolveAssemblyReference.cache
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\obj\Debug\DTO.dll
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\obj\Debug\DTO.pdb
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\bin\Debug\DTO.dll
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\bin\Debug\DTO.pdb
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\obj\Debug\DTO.dll
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\obj\Debug\DTO.pdb
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\bin\Debug\DTO.dll
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\bin\Debug\DTO.pdb
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\obj\Debug\ResolveAssemblyReference.cache
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\obj\Debug\DTO.dll
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\DTO\obj\Debug\DTO.pdb

@@ -1,0 +1,9 @@
+E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\BUS\bin\Debug\BUS.dll
+E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\BUS\bin\Debug\BUS.pdb
+E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\BUS\bin\Debug\DAO.dll
+E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\BUS\bin\Debug\DTO.dll
+E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\BUS\bin\Debug\DAO.pdb
+E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\BUS\bin\Debug\DTO.pdb
+E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\BUS\obj\Debug\ResolveAssemblyReference.cache
+E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\BUS\obj\Debug\BUS.dll
+E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\BUS\obj\Debug\BUS.pdb

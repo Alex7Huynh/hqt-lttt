@@ -1,0 +1,27 @@
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\BUS.dll
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\BUS.pdb
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DAO.dll
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DTO.dll
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DTO.pdb
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DAO.pdb
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\obj\Debug\ResolveAssemblyReference.cache
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\obj\Debug\BUS.dll
+I:\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\obj\Debug\BUS.pdb
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\BUS.dll
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\BUS.pdb
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DAO.dll
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DTO.dll
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DTO.pdb
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DAO.pdb
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\obj\Debug\BUS.dll
+C:\Documents and Settings\Me\Desktop\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\obj\Debug\BUS.pdb
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\BUS.dll
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\BUS.pdb
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DAO.dll
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DTO.dll
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DTO.pdb
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\bin\Debug\DAO.pdb
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\obj\Debug\ResolveAssemblyReference.cache
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\obj\Debug\BUS.dll
+D:\destop\STUDY\2009\NHAP-MON-CONG-NGHE-PHAN-MEM\TH2008-3-NMCNPM-SeminarI-II\QLHS\BUS\obj\Debug\BUS.pdb
