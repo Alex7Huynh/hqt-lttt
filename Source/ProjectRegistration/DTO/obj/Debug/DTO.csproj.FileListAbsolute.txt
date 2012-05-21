@@ -1,5 +1,0 @@
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DTO\bin\Debug\DTO.dll
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DTO\bin\Debug\DTO.pdb
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DTO\obj\Debug\ResolveAssemblyReference.cache
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DTO\obj\Debug\DTO.dll
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DTO\obj\Debug\DTO.pdb

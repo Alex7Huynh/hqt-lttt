@@ -1,7 +1,0 @@
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DAO\bin\Debug\DAO.dll
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DAO\bin\Debug\DAO.pdb
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DAO\bin\Debug\DTO.dll
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DAO\bin\Debug\DTO.pdb
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DAO\obj\Debug\ResolveAssemblyReference.cache
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DAO\obj\Debug\DAO.dll
-E:\Tai lieu\Nam 4\hk2\He qtcsdl\cua tinh\hqt_csdl\doanHQT\QLHS\DAO\obj\Debug\DAO.pdb
