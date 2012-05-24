@@ -52,6 +52,30 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCapNhatSoLuongSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapNhatSoLuongSV.Designer.cs">
+      <DependentUpon>frmCapNhatSoLuongSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCapNhatThoiHan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCapNhatThoiHan.Designer.cs">
+      <DependentUpon>frmCapNhatThoiHan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangKyDoAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangKyDoAn.Designer.cs">
+      <DependentUpon>frmDangKyDoAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHuyDoAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHuyDoAn.Designer.cs">
+      <DependentUpon>frmHuyDoAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCapNhatThoiHan.resx">
+      <DependentUpon>frmCapNhatThoiHan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

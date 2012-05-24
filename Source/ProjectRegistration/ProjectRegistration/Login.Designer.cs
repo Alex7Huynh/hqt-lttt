@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tb_dk = new System.Windows.Forms.TextBox();
             this.tb_tendn = new System.Windows.Forms.TextBox();
             this.btn_dn = new System.Windows.Forms.Button();
@@ -35,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // tb_dk
@@ -44,13 +46,18 @@
             this.tb_dk.PasswordChar = '*';
             this.tb_dk.Size = new System.Drawing.Size(186, 20);
             this.tb_dk.TabIndex = 15;
+            this.toolTip1.SetToolTip(this.tb_dk, "Mật khẩu trùng với tên đăng nhập");
             // 
             // tb_tendn
             // 
+            this.tb_tendn.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tb_tendn.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
             this.tb_tendn.Location = new System.Drawing.Point(94, 39);
             this.tb_tendn.Name = "tb_tendn";
             this.tb_tendn.Size = new System.Drawing.Size(186, 20);
             this.tb_tendn.TabIndex = 14;
+            this.tb_tendn.Text = "nvu";
+            this.toolTip1.SetToolTip(this.tb_tendn, "0812001 (sinh viên) hoặc lqvu (giáo viên)");
             // 
             // btn_dn
             // 
@@ -128,5 +135,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

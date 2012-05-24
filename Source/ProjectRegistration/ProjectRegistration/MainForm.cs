@@ -15,25 +15,29 @@ namespace ProjectRegistration
         {
             InitializeComponent();
         }
-
+        
         private void btnDangKyDoAn_Click(object sender, EventArgs e)
         {
-
+            frmDangKyDoAn frm = new frmDangKyDoAn();
+            frm.Show();
         }
 
         private void btnCapNhatDoAn_Click(object sender, EventArgs e)
         {
-
+            frmCapNhatThoiHan frm = new frmCapNhatThoiHan();
+            frm.Show();
         }
 
         private void btnHuyDoAn_Click(object sender, EventArgs e)
         {
-
+            frmHuyDoAn frm = new frmHuyDoAn();
+            frm.Show();
         }
 
         private void btnCapNhatSLSV_Click(object sender, EventArgs e)
         {
-
+            frmCapNhatSoLuongSV frm = new frmCapNhatSoLuongSV();
+            frm.Show();
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
