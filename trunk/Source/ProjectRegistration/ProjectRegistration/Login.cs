@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using BUS;
 using DTO;
-using DAO;
 namespace ProjectRegistration
 {
     public partial class Login : Form
@@ -17,19 +16,31 @@ namespace ProjectRegistration
         {
             InitializeComponent();
         }
-
+        public static string User;
         private void btn_dn_Click(object sender, EventArgs e)
         {
             string userName = tb_tendn.Text.Trim();
             string pass = tb_dk.Text.Trim();
-            AbstractDAO login = new AbstractDAO();
-            int kq = login.ThucThiSPLogin("spLogin",  userName, pass);
+            DAO.AbstractDAO login = new DAO.AbstractDAO();
+            int kq = login.ThucThiSPLogin(userName, pass);
             if (kq == 1)
-                MessageBox.Show("Bạn đang đăng nhập bằng tài khoản sinh viên");
+            {
+                Login.User = userName;
+                MessageBox.Show("Bạn đang đăng nhập bằng tài khoản sinh viên", "Thông báo");
+                //this.Visible = false;                
+                MainForm frm = new MainForm();                
+                frm.Show();
+            }
             if (kq == 2)
-                MessageBox.Show("Bạn đang đăng nhập bằng tài khoản giáo viên");
+            {
+                Login.User = userName;
+                MessageBox.Show("Bạn đang đăng nhập bằng tài khoản giáo viên", "Thông báo");
+                //this.Visible = false;
+                MainForm frm = new MainForm();
+                frm.Show();
+            }
             if(kq != 1 && kq != 2)
-                MessageBox.Show("Đăng nhập thất bại");
+                MessageBox.Show("Đăng nhập thất bại", "Thông báo");
         }
 
         private void btn_dong_Click(object sender, EventArgs e)
