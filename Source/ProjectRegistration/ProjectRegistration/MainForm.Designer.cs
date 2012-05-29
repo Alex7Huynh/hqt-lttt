@@ -107,11 +107,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnDangKyDoAn;
         private System.Windows.Forms.Button btnCapNhatDoAn;
         private System.Windows.Forms.Button btnHuyDoAn;
         private System.Windows.Forms.Button btnCapNhatSLSV;
         private System.Windows.Forms.Button btnAbout;
+        public System.Windows.Forms.Button btnDangKyDoAn;
     }
 }
 
