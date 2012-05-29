@@ -15,7 +15,8 @@ namespace DAO
         public static string HuyDoAn_Fix = "usp_HuyDoAn_Fix";
         public static string CapNhatSoLuongSVNhom_Error = "usp_CapNhatSoLuongSVNhom_Error";
         public static string CapNhatSoLuongSVNhom_Fix = "usp_CapNhatSoLuongSVNhom_Fix";
-
         public static string Login = "spLogin";
+        public static string LayThongTinSoNhomDoAn = "usp_SoNhomToiDa_SoNhomDaDangKy";
+
     }
 }

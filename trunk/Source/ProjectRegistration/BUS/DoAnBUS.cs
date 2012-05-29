@@ -10,5 +10,13 @@ namespace BUS
         {
             return DAO.DoAnDAO.CapNhatThoiHanNop(MaGV, MaDoAn, ThoiHanNop);
         }
+        public static int[] LaySoNhomDaDangKyDoAn(int maDoAn)
+        {
+            return DAO.DoAnDAO.LaySoNhomDaDangKyDoAn(maDoAn);
+        }
+        public static int DangKyDoAn(string maSinhVien, int maDe, string timeWait, bool Loi)
+        {
+            return DAO.DoAnDAO.DangKyDoAn(maSinhVien, maDe, timeWait, Loi);
+        }
     }
 }
