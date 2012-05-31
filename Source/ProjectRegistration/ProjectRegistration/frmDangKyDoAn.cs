@@ -38,15 +38,15 @@ namespace ProjectRegistration
             {
                 loi = false;
             }
-            int result = BUS.DoAnBUS.DangKyDoAn(maSinhVien, maDe, timeWait, loi);
-            if (result == 0)
+            string result = BUS.DoAnBUS.DangKyDoAn(maSinhVien, maDe, timeWait, loi);
+            if (result.Contains("thất bại"))
             {
-                lbMessage.Text = "Dăng ký thất bại";
+                lbMessage.Text = result;
             }
             else
             {
                 LayThongTinNhomDangKy();
-                lbMessage.Text = "Dăng ký thành công";
+                lbMessage.Text = result;
             }
         }
     }
