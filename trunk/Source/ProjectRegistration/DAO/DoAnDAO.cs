@@ -83,9 +83,9 @@ namespace DAO
             }
             return A;
         }
-        public static int DangKyDoAn(string maSinhVien, int maDe,string timeWait, bool Loi)
+        public static string DangKyDoAn(string maSinhVien, int maDe,string timeWait, bool Loi)
         {
-            int result = 0;
+            string result = string.Empty;
             SqlConnection sqlCn = null;
             DataTable dtbTmp = new DataTable();
             SqlCommand sqlCmd = new SqlCommand();
@@ -109,13 +109,13 @@ namespace DAO
                 sqlCmd.Parameters.Add(new SqlParameter("@KetQua", result));
                 sqlCmd.Parameters["@KetQua"].Direction = ParameterDirection.Output;
                 sqlCmd.ExecuteNonQuery();
-                result = (int)sqlCmd.Parameters["@KetQua"].Value;
+                result = (string)sqlCmd.Parameters["@KetQua"].Value;
                 AbstractDAO.DongKetNoi(sqlCn);
             }
             catch (Exception ex)
             {
-               // throw (ex);
-                result = 0;
+               throw (ex);
+                
             }
             finally
             {
