@@ -35,6 +35,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
+            this.tbTimeWait = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbFixLoi = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -83,7 +86,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(272, 159);
+            this.btnThoat.Location = new System.Drawing.Point(272, 215);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 4;
@@ -93,7 +96,7 @@
             // 
             // btnCapNhat
             // 
-            this.btnCapNhat.Location = new System.Drawing.Point(147, 159);
+            this.btnCapNhat.Location = new System.Drawing.Point(147, 215);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(75, 23);
             this.btnCapNhat.TabIndex = 5;
@@ -101,11 +104,41 @@
             this.btnCapNhat.UseVisualStyleBackColor = true;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
+            // tbTimeWait
+            // 
+            this.tbTimeWait.Location = new System.Drawing.Point(146, 135);
+            this.tbTimeWait.Name = "tbTimeWait";
+            this.tbTimeWait.Size = new System.Drawing.Size(143, 20);
+            this.tbTimeWait.TabIndex = 10;
+            this.tbTimeWait.Text = "00:00:05";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(54, 142);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Thời gian chờ:";
+            // 
+            // cbFixLoi
+            // 
+            this.cbFixLoi.AutoSize = true;
+            this.cbFixLoi.Location = new System.Drawing.Point(147, 172);
+            this.cbFixLoi.Name = "cbFixLoi";
+            this.cbFixLoi.Size = new System.Drawing.Size(80, 17);
+            this.cbFixLoi.TabIndex = 11;
+            this.cbFixLoi.Text = "Demo fix lỗi";
+            this.cbFixLoi.UseVisualStyleBackColor = true;
+            // 
             // frmCapNhatThoiHan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(372, 202);
+            this.ClientSize = new System.Drawing.Size(367, 253);
+            this.Controls.Add(this.cbFixLoi);
+            this.Controls.Add(this.tbTimeWait);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.label3);
@@ -129,5 +162,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnCapNhat;
+        private System.Windows.Forms.TextBox tbTimeWait;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox cbFixLoi;
     }
 }

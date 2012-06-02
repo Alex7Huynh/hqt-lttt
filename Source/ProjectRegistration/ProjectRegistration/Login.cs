@@ -29,9 +29,13 @@ namespace ProjectRegistration
                 MessageBox.Show("Bạn đang đăng nhập bằng tài khoản sinh viên", "Thông báo");
                 //this.Visible = false;                
                 MainForm frm = new MainForm();
+                frm.FormClosed += new FormClosedEventHandler(frm_FormClosed);
                 frm.btnCapNhatDoAn.Enabled = false;
                 frm.btnCapNhatSLSV.Enabled = false;
-                frm.Show();
+                frm.Show();                
+
+                this.WindowState = FormWindowState.Minimized;
+                this.ShowInTaskbar = false;
             }
             if (kq == 2)
             {
@@ -39,10 +43,13 @@ namespace ProjectRegistration
                 MessageBox.Show("Bạn đang đăng nhập bằng tài khoản giáo viên", "Thông báo");
                 //this.Visible = false;
                 MainForm frm = new MainForm();
-                //nếu giao viên thì không cho làm trên cái button này
+                frm.FormClosed += new FormClosedEventHandler(frm_FormClosed);                
                 frm.btnDangKyDoAn.Enabled = false;
                 frm.btnHuyDoAn.Enabled = false;
                 frm.Show();
+
+                this.WindowState = FormWindowState.Minimized;
+                this.ShowInTaskbar = false;
             }
             if(kq != 1 && kq != 2)
                 MessageBox.Show("Đăng nhập thất bại", "Thông báo");
@@ -52,5 +59,10 @@ namespace ProjectRegistration
         {
             Close();
         }
+        private void frm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
