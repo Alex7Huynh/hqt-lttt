@@ -23,7 +23,8 @@ namespace ProjectRegistration
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            string kq = BUS.DoAnBUS.CapNhatThoiHanNop(Login.User, int.Parse(txtMaDoAn.Text), dtpThoiHanNop.Value);
+            bool bLoi = !cbFixLoi.Checked;
+            string kq = BUS.DoAnBUS.CapNhatThoiHanNop(Login.User, int.Parse(txtMaDoAn.Text), dtpThoiHanNop.Value, "00:00:05", bLoi);
             MessageBox.Show(kq, "Thông báo");
         }
     }

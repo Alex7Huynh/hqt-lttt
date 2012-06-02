@@ -56,7 +56,7 @@
             this.tb_tendn.Name = "tb_tendn";
             this.tb_tendn.Size = new System.Drawing.Size(186, 20);
             this.tb_tendn.TabIndex = 14;
-            this.tb_tendn.Text = "nvu";
+            this.tb_tendn.Text = "tnhduc";
             this.toolTip1.SetToolTip(this.tb_tendn, "0812001 (sinh viên) hoặc lqvu (giáo viên)");
             // 
             // btn_dn

@@ -9,7 +9,7 @@ namespace DAO
 {
     public class DoAnDAO
     {
-        public static string CapNhatThoiHanNop(string MaGV, int MaDoAn, DateTime ThoiHanNop)
+        public static string CapNhatThoiHanNop(string MaGV, int MaDoAn, DateTime ThoiHanNop, string WaitingTime, bool Loi)
         {            
             string kq = string.Empty;
             
@@ -23,10 +23,18 @@ namespace DAO
                 sqlCn = AbstractDAO.MoKetNoi();
                 sqlCmd.Connection = sqlCn;
                 sqlCmd.CommandType = CommandType.StoredProcedure;
-                sqlCmd.CommandText = MyStored.CapNhatThoiGianNopDoAn_Error;
+                if (Loi)
+                {
+                    sqlCmd.CommandText = MyStored.CapNhatThoiGianNopDoAn_Error;
+                }
+                else
+                {
+                    sqlCmd.CommandText = MyStored.CapNhatThoiGianNopDoAn_Fix;
+                }
                 sqlCmd.Parameters.Add(new SqlParameter("@MaGiaoVien", MaGV));
                 sqlCmd.Parameters.Add(new SqlParameter("@MaDoAn", MaDoAn));
                 sqlCmd.Parameters.Add(new SqlParameter("@ThoiHanNopMoi", ThoiHanNop));
+                sqlCmd.Parameters.Add(new SqlParameter("@WaitingTime", ThoiHanNop));
                 sqlCmd.Parameters.Add(new SqlParameter("@KetQua", kq));
                 sqlCmd.Parameters["@KetQua"].Direction = ParameterDirection.Output;
                 //sqlCmd.Parameters.Direction = ParameterDirection.ReturnValue;
@@ -83,7 +91,7 @@ namespace DAO
             }
             return A;
         }
-        public static string DangKyDoAn(string maSinhVien, int maDe,string timeWait, bool Loi)
+        public static string DangKyDoAn(string maSinhVien, int maDe, string WaitingTime, bool Loi)
         {
             string result = string.Empty;
             SqlConnection sqlCn = null;
@@ -105,7 +113,7 @@ namespace DAO
                 }
                 sqlCmd.Parameters.Add(new SqlParameter("@MaSinhVien", maSinhVien));
                 sqlCmd.Parameters.Add(new SqlParameter("@MaDe", maDe));
-                sqlCmd.Parameters.Add(new SqlParameter("@Wait", timeWait));
+                sqlCmd.Parameters.Add(new SqlParameter("@WaitingTime", WaitingTime));
                 sqlCmd.Parameters.Add(new SqlParameter("@KetQua", result));
                 sqlCmd.Parameters["@KetQua"].Direction = ParameterDirection.Output;
                 sqlCmd.ExecuteNonQuery();
