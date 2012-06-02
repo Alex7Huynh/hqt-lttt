@@ -27,5 +27,10 @@ namespace ProjectRegistration
             string kq = BUS.DoAnBUS.CapNhatThoiHanNop(Login.User, int.Parse(txtMaDoAn.Text), dtpThoiHanNop.Value, "00:00:05", bLoi);
             MessageBox.Show(kq, "Thông báo");
         }
+
+        private void frmCapNhatThoiHan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
