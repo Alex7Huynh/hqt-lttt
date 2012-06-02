@@ -28,7 +28,9 @@ namespace ProjectRegistration
                 Login.User = userName;
                 MessageBox.Show("Bạn đang đăng nhập bằng tài khoản sinh viên", "Thông báo");
                 //this.Visible = false;                
-                MainForm frm = new MainForm();                
+                MainForm frm = new MainForm();
+                frm.btnCapNhatDoAn.Enabled = false;
+                frm.btnCapNhatSLSV.Enabled = false;
                 frm.Show();
             }
             if (kq == 2)
@@ -39,6 +41,7 @@ namespace ProjectRegistration
                 MainForm frm = new MainForm();
                 //nếu giao viên thì không cho làm trên cái button này
                 frm.btnDangKyDoAn.Enabled = false;
+                frm.btnHuyDoAn.Enabled = false;
                 frm.Show();
             }
             if(kq != 1 && kq != 2)

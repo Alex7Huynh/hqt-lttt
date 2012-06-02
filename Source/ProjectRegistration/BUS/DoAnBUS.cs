@@ -18,5 +18,9 @@ namespace BUS
         {
             return DAO.DoAnDAO.DangKyDoAn(maSinhVien, maDe, timeWait, Loi);
         }
+        public static int HuyDoAn(string maSinhVien, int maDe, bool loi)
+        {
+            return DAO.DoAnDAO.HuyDoAn(maSinhVien, maDe, loi);
+        }
     }
 }

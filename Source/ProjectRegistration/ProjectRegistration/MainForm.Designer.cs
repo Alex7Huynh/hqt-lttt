@@ -101,17 +101,18 @@
             this.Controls.Add(this.btnDangKyDoAn);
             this.Name = "MainForm";
             this.Text = "Project Registration";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnCapNhatDoAn;
-        private System.Windows.Forms.Button btnHuyDoAn;
-        private System.Windows.Forms.Button btnCapNhatSLSV;
         private System.Windows.Forms.Button btnAbout;
         public System.Windows.Forms.Button btnDangKyDoAn;
+        public System.Windows.Forms.Button btnHuyDoAn;
+        public System.Windows.Forms.Button btnCapNhatDoAn;
+        public System.Windows.Forms.Button btnCapNhatSLSV;
     }
 }
 

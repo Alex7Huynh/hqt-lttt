@@ -15,5 +15,23 @@ namespace ProjectRegistration
         {
             InitializeComponent();
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            string MaSV = Login.User;
+            int MaDe = int.Parse(txtMaDe.Text);
+            bool DemoLoi = true;
+            if (checkBox1.Checked)
+                DemoLoi = false;
+            int kq = BUS.DoAnBUS.HuyDoAn(MaSV, MaDe, DemoLoi);
+            if (kq == 1)
+            {
+                MessageBox.Show("Bạn hủy đồ án thành công");
+            }
+            else
+            {
+                MessageBox.Show("Không thể hủy đồ án");
+            }
+        }
     }
 }
