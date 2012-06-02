@@ -123,5 +123,44 @@ namespace DAO
             }
             return result;
         }
+        public static int HuyDoAn(string maSinhVien, int maDe, bool Loi)
+        {
+            int result = new int();
+            SqlConnection sqlCn = null;
+            DataTable dtbTmp = new DataTable();
+            SqlCommand sqlCmd = new SqlCommand();
+            try
+            {
+                sqlCmd.CommandTimeout = 2000;
+                sqlCn = AbstractDAO.MoKetNoi();
+                sqlCmd.Connection = sqlCn;
+                sqlCmd.CommandType = CommandType.StoredProcedure;
+                if (Loi)
+                {
+                    sqlCmd.CommandText = MyStored.HuyDoAn_Error;
+                }
+                else
+                {
+                    sqlCmd.CommandText = MyStored.HuyDoAn_Fix;
+                }
+                sqlCmd.Parameters.Add(new SqlParameter("@MaSinhVien", maSinhVien));
+                sqlCmd.Parameters.Add(new SqlParameter("@MaDe", maDe));
+                sqlCmd.Parameters.Add(new SqlParameter("@KetQua", result));
+                sqlCmd.Parameters["@KetQua"].Direction = ParameterDirection.Output;
+                sqlCmd.ExecuteNonQuery();
+                result = int.Parse(sqlCmd.Parameters["@KetQua"].Value.ToString());
+                AbstractDAO.DongKetNoi(sqlCn);
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+
+            }
+            finally
+            {
+                AbstractDAO.DongKetNoi(sqlCn);
+            }
+            return result;
+        }
     }
 }
