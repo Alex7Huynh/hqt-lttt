@@ -12,5 +12,9 @@ namespace BUS
         //{
         //    return MonHocDAO.LayDSMon();
         //}
+        public static int CapNhatSLSVNhom(string MaGV, string TenMonHoc, int Count, string WaitingTime, bool Loi)
+        {
+            return DAO.MonHocDAO.CapNhatSLSVNhom(MaGV, TenMonHoc, Count, WaitingTime, Loi);
+        }
     }
 }

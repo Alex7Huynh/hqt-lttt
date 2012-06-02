@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
+using BUS;
 namespace ProjectRegistration
 {
     public partial class frmCapNhatSoLuongSV : Form
@@ -15,5 +15,26 @@ namespace ProjectRegistration
         {
             InitializeComponent();
         }
+
+        private void frmCapNhatSoLuongSV_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            bool bLoi = !cbFixLoi.Checked;
+            int kq = BUS.MonHocBUS.CapNhatSLSVNhom(Login.User, txtTenMonHoc.Text, (int)NumberValue.Value, "00:00:05", bLoi);
+            if(kq == -1)
+                MessageBox.Show("Bạn không được phân công dạy môn này", "Thông báo");
+            else
+                MessageBox.Show("Số lượng sinh viên nhóm hiện tại là " + kq.ToString(), "Thông báo");
+        }
+
     }
 }

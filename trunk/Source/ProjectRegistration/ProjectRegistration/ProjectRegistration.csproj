@@ -93,6 +93,9 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCapNhatSoLuongSV.resx">
+      <DependentUpon>frmCapNhatSoLuongSV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCapNhatThoiHan.resx">
       <DependentUpon>frmCapNhatThoiHan.cs</DependentUpon>
     </EmbeddedResource>

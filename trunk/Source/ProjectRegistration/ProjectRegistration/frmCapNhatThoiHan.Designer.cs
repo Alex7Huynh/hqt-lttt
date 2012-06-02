@@ -148,6 +148,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmCapNhatThoiHan";
             this.Text = "Cập nhật thời hạn nộp đồ án";
+            this.Load += new System.EventHandler(this.frmCapNhatThoiHan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
