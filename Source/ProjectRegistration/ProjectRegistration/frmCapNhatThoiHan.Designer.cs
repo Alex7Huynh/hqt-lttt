@@ -106,7 +106,7 @@
             // 
             // tbTimeWait
             // 
-            this.tbTimeWait.Location = new System.Drawing.Point(146, 135);
+            this.tbTimeWait.Location = new System.Drawing.Point(147, 139);
             this.tbTimeWait.Name = "tbTimeWait";
             this.tbTimeWait.Size = new System.Drawing.Size(143, 20);
             this.tbTimeWait.TabIndex = 10;

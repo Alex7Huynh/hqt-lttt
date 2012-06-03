@@ -11,7 +11,7 @@ namespace DAO
     {
         public static string CapNhatThoiHanNop(string MaGV, int MaDoAn, DateTime ThoiHanNop, string WaitingTime, bool Loi)
         {            
-            string kq = string.Empty;
+            string result = string.Empty;
             
             SqlConnection sqlCn = null;
             DataTable dtbTmp = new DataTable();
@@ -34,12 +34,14 @@ namespace DAO
                 sqlCmd.Parameters.Add(new SqlParameter("@MaGiaoVien", MaGV));
                 sqlCmd.Parameters.Add(new SqlParameter("@MaDoAn", MaDoAn));
                 sqlCmd.Parameters.Add(new SqlParameter("@ThoiHanNopMoi", ThoiHanNop));
-                sqlCmd.Parameters.Add(new SqlParameter("@WaitingTime", ThoiHanNop));
-                sqlCmd.Parameters.Add(new SqlParameter("@KetQua", kq));
-                sqlCmd.Parameters["@KetQua"].Direction = ParameterDirection.Output;
-                //sqlCmd.Parameters.Direction = ParameterDirection.ReturnValue;
+                sqlCmd.Parameters.Add(new SqlParameter("@WaitingTime", WaitingTime));                
+                SqlParameter resultParam = new SqlParameter("@KetQua", SqlDbType.NVarChar, 100);
+                resultParam.Direction = ParameterDirection.Output;
+                sqlCmd.Parameters.Add(resultParam);
+
                 sqlCmd.ExecuteNonQuery();
-                kq = (string)sqlCmd.Parameters["@KetQua"].Value;
+
+                result = sqlCmd.Parameters["@KetQua"].Value.ToString();                
 
                 AbstractDAO.DongKetNoi(sqlCn);
             }
@@ -51,7 +53,7 @@ namespace DAO
             {
                 AbstractDAO.DongKetNoi(sqlCn);
             }            
-            return kq;
+            return result;
         }
         public static int[] LaySoNhomDaDangKyDoAn(int maDoAn)
         {
@@ -94,6 +96,7 @@ namespace DAO
         public static string DangKyDoAn(string maSinhVien, int maDe, string WaitingTime, bool Loi)
         {
             string result = string.Empty;
+            string thoiHanNop = string.Empty;
             SqlConnection sqlCn = null;
             DataTable dtbTmp = new DataTable();
             SqlCommand sqlCmd = new SqlCommand();
@@ -114,10 +117,21 @@ namespace DAO
                 sqlCmd.Parameters.Add(new SqlParameter("@MaSinhVien", maSinhVien));
                 sqlCmd.Parameters.Add(new SqlParameter("@MaDe", maDe));
                 sqlCmd.Parameters.Add(new SqlParameter("@WaitingTime", WaitingTime));
-                sqlCmd.Parameters.Add(new SqlParameter("@KetQua", result));
-                sqlCmd.Parameters["@KetQua"].Direction = ParameterDirection.Output;
+
+                SqlParameter thoiHanNopParam = new SqlParameter("@ThoiHanNopKQ", SqlDbType.DateTime);
+                thoiHanNopParam.Direction = ParameterDirection.Output;
+                sqlCmd.Parameters.Add(thoiHanNopParam);
+
+                SqlParameter resultParam = new SqlParameter("@KetQua", SqlDbType.NVarChar, 100);
+                resultParam.Direction = ParameterDirection.Output;
+                sqlCmd.Parameters.Add(resultParam);
+
                 sqlCmd.ExecuteNonQuery();
-                result = (string)sqlCmd.Parameters["@KetQua"].Value;
+
+                result = sqlCmd.Parameters["@KetQua"].Value.ToString();
+                thoiHanNop = sqlCmd.Parameters["@ThoiHanNopKQ"].Value.ToString();
+                result += "\r\nThời hạn nộp sau khi đăng ký là " + thoiHanNop;
+
                 AbstractDAO.DongKetNoi(sqlCn);
             }
             catch (Exception ex)
@@ -155,8 +169,11 @@ namespace DAO
                 sqlCmd.Parameters.Add(new SqlParameter("@MaDe", maDe));
                 sqlCmd.Parameters.Add(new SqlParameter("@KetQua", result));
                 sqlCmd.Parameters["@KetQua"].Direction = ParameterDirection.Output;
+
                 sqlCmd.ExecuteNonQuery();
+
                 result = int.Parse(sqlCmd.Parameters["@KetQua"].Value.ToString());
+
                 AbstractDAO.DongKetNoi(sqlCn);
             }
             catch (Exception ex)

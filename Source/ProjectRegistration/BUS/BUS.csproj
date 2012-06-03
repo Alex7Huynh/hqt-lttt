@@ -57,9 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DoAnBUS.cs" />
-    <Compile Include="GiaoVienBUS.cs" />
     <Compile Include="MonHocBUS.cs" />
-    <Compile Include="SinhVienBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
