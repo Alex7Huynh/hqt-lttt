@@ -36,14 +36,15 @@
             this.cbFixLoi = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbTimeWait = new System.Windows.Forms.TextBox();
-            this.lbMessage = new System.Windows.Forms.Label();
             this.lbSinhVien = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 114);
+            this.label1.Location = new System.Drawing.Point(35, 179);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             // tbMaDe
             // 
-            this.tbMaDe.Location = new System.Drawing.Point(110, 109);
+            this.tbMaDe.Location = new System.Drawing.Point(120, 174);
             this.tbMaDe.Name = "tbMaDe";
             this.tbMaDe.Size = new System.Drawing.Size(144, 20);
             this.tbMaDe.TabIndex = 1;
@@ -59,9 +60,9 @@
             // 
             // btDangKy
             // 
-            this.btDangKy.Location = new System.Drawing.Point(110, 200);
+            this.btDangKy.Location = new System.Drawing.Point(42, 269);
             this.btDangKy.Name = "btDangKy";
-            this.btDangKy.Size = new System.Drawing.Size(82, 27);
+            this.btDangKy.Size = new System.Drawing.Size(75, 23);
             this.btDangKy.TabIndex = 2;
             this.btDangKy.Text = "Đăng ký";
             this.btDangKy.UseVisualStyleBackColor = true;
@@ -69,7 +70,7 @@
             // 
             // tbSoNhomDangKy
             // 
-            this.tbSoNhomDangKy.Location = new System.Drawing.Point(28, 66);
+            this.tbSoNhomDangKy.Location = new System.Drawing.Point(38, 131);
             this.tbSoNhomDangKy.Name = "tbSoNhomDangKy";
             this.tbSoNhomDangKy.ReadOnly = true;
             this.tbSoNhomDangKy.Size = new System.Drawing.Size(226, 20);
@@ -77,7 +78,7 @@
             // 
             // tbSoNhomToiDa
             // 
-            this.tbSoNhomToiDa.Location = new System.Drawing.Point(28, 33);
+            this.tbSoNhomToiDa.Location = new System.Drawing.Point(38, 98);
             this.tbSoNhomToiDa.Name = "tbSoNhomToiDa";
             this.tbSoNhomToiDa.ReadOnly = true;
             this.tbSoNhomToiDa.Size = new System.Drawing.Size(226, 20);
@@ -86,7 +87,7 @@
             // cbFixLoi
             // 
             this.cbFixLoi.AutoSize = true;
-            this.cbFixLoi.Location = new System.Drawing.Point(112, 176);
+            this.cbFixLoi.Location = new System.Drawing.Point(122, 241);
             this.cbFixLoi.Name = "cbFixLoi";
             this.cbFixLoi.Size = new System.Drawing.Size(80, 17);
             this.cbFixLoi.TabIndex = 6;
@@ -96,7 +97,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 144);
+            this.label2.Location = new System.Drawing.Point(35, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 7;
@@ -104,37 +105,50 @@
             // 
             // tbTimeWait
             // 
-            this.tbTimeWait.Location = new System.Drawing.Point(111, 143);
+            this.tbTimeWait.Location = new System.Drawing.Point(121, 208);
             this.tbTimeWait.Name = "tbTimeWait";
             this.tbTimeWait.Size = new System.Drawing.Size(143, 20);
             this.tbTimeWait.TabIndex = 8;
             this.tbTimeWait.Text = "00:00:05";
             // 
-            // lbMessage
-            // 
-            this.lbMessage.AutoSize = true;
-            this.lbMessage.Location = new System.Drawing.Point(109, 240);
-            this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(53, 13);
-            this.lbMessage.TabIndex = 9;
-            this.lbMessage.Text = "Message:";
-            // 
             // lbSinhVien
             // 
             this.lbSinhVien.AutoSize = true;
-            this.lbSinhVien.Location = new System.Drawing.Point(29, 7);
+            this.lbSinhVien.Location = new System.Drawing.Point(39, 72);
             this.lbSinhVien.Name = "lbSinhVien";
             this.lbSinhVien.Size = new System.Drawing.Size(54, 13);
             this.lbSinhVien.TabIndex = 10;
             this.lbSinhVien.Text = "Sinh viên:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(54, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(189, 26);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "ĐĂNG KÝ ĐỒ ÁN";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(189, 269);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmDangKyDoAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(298, 320);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lbSinhVien);
-            this.Controls.Add(this.lbMessage);
             this.Controls.Add(this.tbTimeWait);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbFixLoi);
@@ -144,7 +158,7 @@
             this.Controls.Add(this.tbMaDe);
             this.Controls.Add(this.label1);
             this.Name = "frmDangKyDoAn";
-            this.Text = "frmDangKyDoAn";
+            this.Text = "Đăng ký đồ án";
             this.Load += new System.EventHandler(this.frmDangKyDoAn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -161,7 +175,8 @@
         private System.Windows.Forms.CheckBox cbFixLoi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbTimeWait;
-        private System.Windows.Forms.Label lbMessage;
         private System.Windows.Forms.Label lbSinhVien;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }

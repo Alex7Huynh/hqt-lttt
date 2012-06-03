@@ -41,13 +41,20 @@ namespace ProjectRegistration
             string result = BUS.DoAnBUS.DangKyDoAn(maSinhVien, maDe, timeWait, loi);
             if (result.Contains("thất bại"))
             {
-                lbMessage.Text = result;
+                //lbMessage.Text = result;
+                MessageBox.Show(result, "Thông báo");
             }
             else
             {
                 LayThongTinNhomDangKy();
-                lbMessage.Text = result;
+                //lbMessage.Text = result;
+                MessageBox.Show(result, "Thông báo");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

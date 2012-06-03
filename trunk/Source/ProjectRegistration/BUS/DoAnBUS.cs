@@ -16,7 +16,14 @@ namespace BUS
         }
         public static string DangKyDoAn(string maSinhVien, int maDe, string WaitingTime, bool Loi)
         {
-            return DAO.DoAnDAO.DangKyDoAn(maSinhVien, maDe, WaitingTime, Loi);
+            try
+            {
+                return DAO.DoAnDAO.DangKyDoAn(maSinhVien, maDe, WaitingTime, Loi);
+            }
+            catch (Exception ex)
+            {
+                return ex.ToString();
+            }            
         }
         public static int HuyDoAn(string maSinhVien, int maDe, bool loi)
         {
