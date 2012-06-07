@@ -17,6 +17,6 @@ namespace DAO
         public static string CapNhatSoLuongSVNhom_Fix = "usp_CapNhatSoLuongSVNhom_Fix";
         public static string Login = "spLogin";
         public static string LayThongTinSoNhomDoAn = "usp_SoNhomToiDa_SoNhomDaDangKy";
-
+        public static string DSMaDeTheoSinhVien = "usp_DSMaDeSVDaDangKy";
     }
 }
