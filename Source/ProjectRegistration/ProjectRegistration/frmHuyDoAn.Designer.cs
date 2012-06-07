@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtMaDe = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.cmbMaDe = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -42,13 +42,6 @@
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã đề";
-            // 
-            // txtMaDe
-            // 
-            this.txtMaDe.Location = new System.Drawing.Point(88, 25);
-            this.txtMaDe.Name = "txtMaDe";
-            this.txtMaDe.Size = new System.Drawing.Size(100, 20);
-            this.txtMaDe.TabIndex = 1;
             // 
             // checkBox1
             // 
@@ -70,17 +63,27 @@
             this.btnHuy.UseVisualStyleBackColor = true;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
+            // cmbMaDe
+            // 
+            this.cmbMaDe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMaDe.FormattingEnabled = true;
+            this.cmbMaDe.Location = new System.Drawing.Point(88, 25);
+            this.cmbMaDe.Name = "cmbMaDe";
+            this.cmbMaDe.Size = new System.Drawing.Size(121, 21);
+            this.cmbMaDe.TabIndex = 4;
+            // 
             // frmHuyDoAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(227, 144);
+            this.Controls.Add(this.cmbMaDe);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.txtMaDe);
             this.Controls.Add(this.label1);
             this.Name = "frmHuyDoAn";
-            this.Text = "frmHuyDoAn";
+            this.Text = "Hủy Đồ Án";
+            this.Load += new System.EventHandler(this.frmHuyDoAn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,8 +92,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtMaDe;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.ComboBox cmbMaDe;
     }
 }
