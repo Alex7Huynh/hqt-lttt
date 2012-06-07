@@ -28,8 +28,15 @@ namespace ProjectRegistration
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
+            int kq;
             bool bLoi = !cbFixLoi.Checked;
-            int kq = BUS.MonHocBUS.CapNhatSLSVNhom(Login.User, txtTenMonHoc.Text, (int)NumberValue.Value, "00:00:05", bLoi);
+            if(bLoi)
+                kq = BUS.MonHocBUS.CapNhatSLSVNhom(Login.User, txtTenMonHoc.Text, (int)NumberValue.Value, "00:00:05", bLoi);
+            else
+            {
+                kq = BUS.MonHocBUS.CapNhatSLSVNhom(Login.User, txtTenMonHoc.Text, (int)NumberValue.Value, "00:00:01", bLoi);
+                System.Threading.Thread.Sleep(5000);
+            }
             if(kq == -1)
                 MessageBox.Show("Bạn không được phân công dạy môn này", "Thông báo");
             else
