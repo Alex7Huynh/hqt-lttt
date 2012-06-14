@@ -1,0 +1,12 @@
+UPDATE DOAN SET ThoiHanNop='04/08/2012' WHERE MaDoAn=2
+UPDATE DOAN SET ThoiHanNop='07/30/2012' WHERE MaDoAn=2
+UPDATE DOAN SET ThoiHanNop='07/29/2012' WHERE MaDoAn=2
+select * from DOAN
+select * from MONHOC
+select * from DE_SINHVIEN
+DELETE FROM DE_SINHVIEN WHERE MaSinhVien='0812008'
+UPDATE MONHOC SET ThoiGianKetThuc='8/1/2012' WHERE MaMonHoc=9
+
+DECLARE @Ketqua NVARCHAR(100)
+EXEC usp_DangKyDoAn_Error '0812008', 1, '00:00:01', @Ketqua output
+PRINT @Ketqua
