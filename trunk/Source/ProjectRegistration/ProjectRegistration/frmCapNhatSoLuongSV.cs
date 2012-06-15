@@ -34,7 +34,7 @@ namespace ProjectRegistration
                 kq = BUS.MonHocBUS.CapNhatSLSVNhom(Login.User, txtTenMonHoc.Text, (int)NumberValue.Value, "00:00:05", bLoi);
             else
             {
-                kq = BUS.MonHocBUS.CapNhatSLSVNhom(Login.User, txtTenMonHoc.Text, (int)NumberValue.Value, "00:00:01", bLoi);
+                kq = BUS.MonHocBUS.CapNhatSLSVNhom(Login.User, txtTenMonHoc.Text, (int)NumberValue.Value, "00:00:05", bLoi);
                 System.Threading.Thread.Sleep(5000);
             }
             if(kq == -1)
